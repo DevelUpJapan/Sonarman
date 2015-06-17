@@ -1,0 +1,12 @@
+/* ------------------------------------- /
+/    Footer
+/* ------------------------------------- */
+#footer{
+    text-align: center;
+    background-color: #7E7E7E;
+}
+
+/* extend bootstrap */
+li.label-info{
+    color: white;
+}

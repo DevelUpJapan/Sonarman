@@ -1,0 +1,3 @@
+watchfor = /ERRORINFO/i
+	threshold track_by=/ERRORINFO/,type=limit,count=1,seconds=30
+	exec /home/sonarman/shells/cap_save.sh "$_"
