@@ -10,7 +10,7 @@ $str = <<< EOF
                             <p>Infomation</p>
                             <ul class="list-group">
                                 <li class="list-group-item">Model Number：SMV-001</li>
-                                <li class="list-group-item">Firmware version：ver 1.0</li>
+                                <li class="list-group-item">Firmware version：ver 1.01</li>
                             </ul>
                         </div>
                     </div>

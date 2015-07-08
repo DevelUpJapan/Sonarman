@@ -6,7 +6,7 @@ source /home/sonarman/shells/dat/cappath
 
 loopcnt=0
 filelimit=$qty
-cd $cappath
+cd $cappath/cap
 
 filelist=`ls -t -r`
 
