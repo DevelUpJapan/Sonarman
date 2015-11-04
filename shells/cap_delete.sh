@@ -4,20 +4,14 @@
 source /home/sonarman/shells/dat/capfile
 source /home/sonarman/shells/dat/cappath
 
-loopcnt=0
 filelimit=$qty
 cd $cappath/cap
 
-filelist=`ls -t -r`
+current=`ls -l | wc -l`
+deletefiles=`expr $current - $qty`
 
-for delfname in $filelist; do
-
-	if [ $loopcnt -ge $filelimit -a -f $delfname ]; then
-		rm -f $delfname || exit 10 
-	#echo "$delfname was deleted!"
-	fi
-
-	loopcnt=`expr $loopcnt + 1`
-done
+if [ $current -gt $qty ]; then
+    ls -t | tail -${deletefiles} | xargs rm
+fi
 
 exit 0
